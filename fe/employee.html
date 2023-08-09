@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Employees</h1>
+    <div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="wage" placeholder="Wage">
+        <button onclick="create()">Create</button>
+    </div>
+    <br>
+    <br>
+    <div>
+        <input type="text" name="name" id="search" placeholder="Search by name...">
+        <button onclick="getEmployees()">Search</button>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Wage</th>
+        </tr>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script>
+        getEmployees()
+    </script>
+</body>
+</html>
